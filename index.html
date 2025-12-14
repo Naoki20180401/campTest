@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT相談窓口</title>
+  <meta name="description" content="従業員10〜100名規模のITに疎い業種・個人事業主向け。ささいな悩み事でもITで解決します。" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <span class="brand__logo">IT</span>
+        <span class="brand__name">IT相談窓口</span>
+      </div>
+
+      <nav class="tabs" aria-label="ページ内タブ">
+        <button class="tab is-active" data-tab="service" aria-controls="panel-service" aria-selected="true">事業内容</button>
+        <button class="tab" data-tab="pricing" aria-controls="panel-pricing" aria-selected="false">料金体系</button>
+        <button class="tab" data-tab="qa" aria-controls="panel-qa" aria-selected="false">Q &amp; A</button>
+        <button class="tab" data-tab="contact" aria-controls="panel-contact" aria-selected="false">問い合わせ</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- First View -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>あなたの悩み事をITで解決します。</h1>
+        <p class="hero__sub">ささいな悩み事でも構いません。</p>
+
+        <div class="hero__targets">
+          <div class="pill">従業員 10〜50 / 100名規模</div>
+          <div class="pill">ITに疎い業種の会社 / 個人事業主</div>
+        </div>
+
+        <div class="hero__cta">
+          <button class="btn primary" data-jump="contact">無料で相談してみる</button>
+          <button class="btn ghost" data-jump="service">事業内容を見る</button>
+        </div>
+      </div>
+
+      <div class="hero__card" aria-hidden="true">
+        <div class="card">
+          <div class="card__title">よくある相談</div>
+          <ul class="card__list">
+            <li>PCが遅い / ネットが不安定</li>
+            <li>メール・共有フォルダが混乱</li>
+            <li>セキュリティが不安</li>
+            <li>情シスがいない / 片手間運用</li>
+          </ul>
+          <div class="card__note">※ まずは状況を整理して、最短ルートを提案します。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container main">
+    <!-- Panels -->
+    <section id="panel-service" class="panel is-active" data-panel="service" role="tabpanel">
+      <h2>事業内容</h2>
+      <p class="lead">
+        従業員10〜100名規模の「ITに詳しくない」現場でも回るように、<strong>分かりやすく・小さく始めて・効果が出る</strong>支援をします。
+      </p>
+
+      <div class="grid">
+        <article class="box">
+          <h3>ITなんでも相談</h3>
+          <p>困りごとを言語化し、優先度を整理。対策案を複数提示します（コスト/効果/リスク比較）。</p>
+        </article>
+        <article class="box">
+          <h3>業務のIT化・自動化</h3>
+          <p>Google Workspace / Microsoft 365 / Slack / Chat /フォームなど、現場に合わせて導入と定着まで。</p>
+        </article>
+        <article class="box">
+          <h3>セキュリティ基礎整備</h3>
+          <p>多要素認証・端末管理・バックアップ・権限設計など、最低限やるべき対策を実装します。</p>
+        </article>
+        <article class="box">
+          <h3>情シス代行（小規模）</h3>
+          <p>入退社アカウント対応、PCセットアップ、IT資産台帳、問い合わせ窓口などを代行します。</p>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>対象:</strong> ITに疎い業種の会社 / 個人事業主（従業員10〜100名目安）<br />
+        <strong>進め方:</strong> ヒアリング → 現状整理 → 優先順位 → 実行 → 定着
+      </div>
+    </section>
+
+    <section id="panel-pricing" class="panel" data-panel="pricing" role="tabpanel">
+      <h2>料金体系</h2>
+      <p class="lead">まずはライトに開始して、必要に応じて拡張できます。</p>
+
+      <div class="pricing">
+        <div class="priceCard">
+          <h3>ライト</h3>
+          <div class="price">月額 10万円</div>
+          <ul>
+            <li>月2回まで相談（オンライン）</li>
+            <li>チャット相談（平日）</li>
+            <li>簡易な改善提案</li>
+          </ul>
+        </div>
+
+        <div class="priceCard is-pop">
+          <div class="badge">人気</div>
+          <h3>スタンダード</h3>
+          <div class="price">月額 15万円</div>
+          <ul>
+            <li>月4回まで相談（オンライン）</li>
+            <li>運用ルール整備（権限/共有）</li>
+            <li>軽微な設定変更・手順書作成</li>
+          </ul>
+        </div>
+
+        <div class="priceCard">
+          <h3>フル</h3>
+          <div class="price">月額 20万円</div>
+          <ul>
+            <li>情シス窓口（問い合わせ一次対応）</li>
+            <li>端末/アカウント運用</li>
+            <li>セキュリティ基礎整備</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note">
+        ※ 金額は目安です。現状や対応範囲により調整します。スポット対応（単発）も可能です。
+      </div>
+    </section>
+
+    <section id="panel-qa" class="panel" data-panel="qa" role="tabpanel">
+      <h2>Q &amp; A</h2>
+
+      <details class="qa" open>
+        <summary>本当に小さな相談でもいいですか？</summary>
+        <p>もちろん大丈夫です。何を優先すべきか整理するだけでも効果があります。</p>
+      </details>
+
+      <details class="qa">
+        <summary>ITが苦手でも伝えられますか？</summary>
+        <p>問題ありません。状況を質問で引き出し、分かりやすい言葉で整理します。</p>
+      </details>
+
+      <details class="qa">
+        <summary>対応エリアは？</summary>
+        <p>オンライン中心で全国対応可能です。必要に応じて訪問も相談できます。</p>
+      </details>
+
+      <details class="qa">
+        <summary>契約前に相談できますか？</summary>
+        <p>はい。まずは問い合わせから現状を共有ください。初回は簡易ヒアリングで進めます。</p>
+      </details>
+    </section>
+
+    <section id="panel-contact" class="panel" data-panel="contact" role="tabpanel">
+      <h2>問い合わせ</h2>
+      <p class="lead">
+        送信後、入力いただいたメールアドレス宛に<strong>お礼メール（自動返信）</strong>をお送りします。
+      </p>
+
+      <form id="contactForm" class="form">
+        <div class="form__row">
+          <label>
+            お名前<span class="req">*</span>
+            <input name="name" type="text" required maxlength="60" placeholder="例）山田 太郎" />
+          </label>
+          <label>
+            メールアドレス<span class="req">*</span>
+            <input name="email" type="email" required maxlength="120" placeholder="example@company.com" />
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label>
+            会社名（個人事業主の方は屋号）
+            <input name="company" type="text" maxlength="80" placeholder="例）株式会社〇〇" />
+          </label>
+          <label>
+            従業員規模
+            <select name="size">
+              <option value="">選択してください</option>
+              <option>10〜50名</option>
+              <option>51〜100名</option>
+              <option>個人事業主</option>
+              <option>その他</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          相談内容<span class="req">*</span>
+          <textarea name="message" required maxlength="2000" rows="7"
+            placeholder="例）PCが遅い、共有フォルダがぐちゃぐちゃ、セキュリティが不安、情シスがいない等"></textarea>
+        </label>
+
+        <div class="form__actions">
+          <button class="btn primary" type="submit">送信する</button>
+          <p class="form__hint" id="formHint">※ 送信内容は暗号化（HTTPS）で送られます。</p>
+        </div>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© IT相談窓口</small>
+      <div class="footer__links">
+        <a href="#" data-jump="service">事業内容</a>
+        <a href="#" data-jump="pricing">料金体系</a>
+        <a href="#" data-jump="qa">Q &amp; A</a>
+        <a href="#" data-jump="contact">問い合わせ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
